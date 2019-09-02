@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  kiritchoukc.com:
+    image: kiritchoukc/kiritchoukc.com
+    restart: always
+    environment:
+      - VIRTUAL_HOST= www.kiritchoukc.com,kiritchoukc.com
+      - LETSENCRYPT_HOST= www.kiritchoukc.com
+      - LETSENCRYPT_EMAIL= clement.kiritchouk@protonmail.com
+    container_name: kiritchoukc.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
