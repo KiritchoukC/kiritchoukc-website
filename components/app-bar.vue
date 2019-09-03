@@ -1,19 +1,20 @@
 <template>
-  <v-app-bar app scroll-threshold="600" inverted-scroll>
+  <v-app-bar
+    app
+    scroll-threshold="600"
+    inverted-scroll
+    flat
+    color="transparent"
+  >
     <v-btn icon>
-      <logo
-        :height="'30px'"
-        :width="'30px'"
-        class="text--grey text--darken-1"
-        style="fill:currentColor"
-      ></logo>
+      <logo :height="'40px'" :width="'40px'"></logo>
     </v-btn>
     <div class="flex-grow-1"></div>
     <v-btn icon>
       <github-logo
         :height="'30px'"
         :width="'30px'"
-        class="text--grey text--darken-1"
+        class="grey--text text--darken-1"
         style="fill:currentColor"
       ></github-logo>
     </v-btn>
@@ -22,7 +23,7 @@
       <twitter-logo
         :height="'30px'"
         :width="'30px'"
-        class="text--grey text--darken-1"
+        class="grey--text text--darken-1"
         style="fill:currentColor"
       ></twitter-logo>
     </v-btn>
@@ -31,7 +32,7 @@
       <linkedin-logo
         :height="'30px'"
         :width="'30px'"
-        class="text--grey text--darken-1"
+        class="grey--text text--darken-1"
         style="fill:currentColor"
       ></linkedin-logo>
     </v-btn>
