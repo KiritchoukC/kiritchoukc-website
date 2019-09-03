@@ -1,40 +1,59 @@
 <template>
   <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app :hidden="true"></v-app-bar>
+    <v-app-bar fixed app :hidden="!showAppBar"></v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer :fixed="fixed" app :hidden="true">
+    <custom-footer :hidden="!showFooter">
       <span>Kiritchouk Clément - &copy; 2019</span>
-    </v-footer>
+      <div>
+        Github Icon made by
+        <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy"
+          >Dave Gandy</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        LinkedIn Icon made by
+        <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon"
+          >SimpleIcon</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Twitter Icon made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </custom-footer>
   </v-app>
 </template>
 
 <script>
+import customFooter from '@/components/footer.vue'
 export default {
+  components: {
+    customFooter
+  },
   data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      showAppBar: false,
+      showFooter: false
     }
   }
 }
