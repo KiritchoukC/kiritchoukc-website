@@ -3,16 +3,19 @@
     <v-content>
       <nuxt />
     </v-content>
+    <app-footer></app-footer>
   </v-app>
 </template>
 
 <script>
+import appFooter from '@/components/footer.vue'
+
 export default {
+  components: {
+    appFooter
+  },
   data() {
-    return {
-      showAppBar: false,
-      showFooter: false
-    }
+    return {}
   }
 }
 </script>
