@@ -27,7 +27,9 @@
     </v-col>
     <v-col cols="12" align-self="end">
       <v-row justify="center">
-        <v-icon>mdi-chevron-down</v-icon>
+        <v-icon :style="{ opacity: chevronDownOpacity }"
+          >mdi-chevron-down</v-icon
+        >
       </v-row>
     </v-col>
   </v-row>
@@ -41,6 +43,22 @@ export default {
   components: {
     socialBtns,
     logo
+  },
+  data() {
+    return {
+      chevronDownOpacity: 1
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll({ pageY }) {
+      this.chevronDownOpacity = 1 - pageY / 2000
+    }
   }
 }
 </script>
