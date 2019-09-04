@@ -13,14 +13,14 @@
             <a
               href="https://www.flaticon.com/authors/dave-gandy"
               title="Dave Gandy"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >Dave Gandy</a
             >
             from
             <a
               href="https://www.flaticon.com/"
               title="Flaticon"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >www.flaticon.com</a
             >
           </v-col>
@@ -29,14 +29,14 @@
             <a
               href="https://www.flaticon.com/authors/pixel-perfect"
               title="Pixel perfect"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >Pixel perfect</a
             >
             from
             <a
               href="https://www.flaticon.com/"
               title="Flaticon"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >www.flaticon.com</a
             >
           </v-col>
@@ -45,14 +45,14 @@
             <a
               href="https://www.flaticon.com/authors/simpleicon"
               title="SimpleIcon"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >SimpleIcon</a
             >
             from
             <a
               href="https://www.flaticon.com/"
               title="Flaticon"
-              class="grey--text"
+              class="grey--text text--lighten-1"
               >www.flaticon.com</a
             >
           </v-col>
