@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
-    <v-app-bar fixed app :hidden="!showAppBar"></v-app-bar>
+    <app-bar></app-bar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <custom-footer :hidden="!showFooter">
+    <custom-footer>
       <span>Kiritchouk Clément - &copy; 2019</span>
       <div>
         Github Icon made by
@@ -46,15 +46,14 @@
 
 <script>
 import customFooter from '@/components/footer.vue'
+import appBar from '@/components/app-bar.vue'
 export default {
   components: {
-    customFooter
+    customFooter,
+    appBar
   },
   data() {
-    return {
-      showAppBar: false,
-      showFooter: false
-    }
+    return {}
   }
 }
 </script>

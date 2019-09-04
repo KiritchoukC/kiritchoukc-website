@@ -1,8 +1,8 @@
 <template>
   <v-app-bar
     app
-    scroll-threshold="600"
-    inverted-scroll
+    :scroll-threshold="scrollable ? '600' : '0'"
+    :inverted-scroll="scrollable"
     flat
     color="transparent"
   >
@@ -50,6 +50,9 @@ export default {
     linkedinLogo,
     twitterLogo,
     logo
+  },
+  props: {
+    scrollable: { type: Boolean, default: false }
   }
 }
 </script>
