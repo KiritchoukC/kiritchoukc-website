@@ -4,7 +4,7 @@
     ripple
     min-height="700"
     hover
-    href="/contact"
+    to="/contact"
     nuxt
     width="400"
     class="app-card"

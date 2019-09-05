@@ -1,5 +1,5 @@
 <template>
-  <v-card dark ripple min-height="700" hover href="/about" nuxt width="400">
+  <v-card dark ripple min-height="700" hover to="/about" nuxt width="400">
     <v-img
       height="700px"
       src="/media/Me.jpg"
