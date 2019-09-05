@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     handleScroll({ pageY }) {
-      this.chevronDownOpacity = 1 - pageY / 2000
+      this.chevronDownOpacity = 0.8 - pageY / 1000
     }
   }
 }
