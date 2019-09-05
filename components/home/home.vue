@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-bar scrollable="true"></app-bar>
+    <app-bar :scrollable="true" :show-menu="false"></app-bar>
     <v-row
       justify="center"
       align="center"

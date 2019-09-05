@@ -6,9 +6,20 @@
     flat
     color="transparent"
   >
-    <v-btn icon>
+    <v-btn icon ripple to="/" nuxt>
       <logo :height="'40px'" :width="'40px'"></logo>
     </v-btn>
+    <template v-if="showMenu">
+      <v-btn text ripple to="/projects" nuxt active-class="btn--active"
+        >Projects</v-btn
+      >
+      <v-btn text ripple to="/contact" nuxt active-class="btn--active"
+        >Contact</v-btn
+      >
+      <v-btn text ripple to="/about" nuxt active-class="btn--active"
+        >About</v-btn
+      >
+    </template>
     <div class="flex-grow-1"></div>
     <v-btn icon>
       <github-logo
@@ -52,9 +63,19 @@ export default {
     logo
   },
   props: {
-    scrollable: { type: Boolean, default: false }
+    scrollable: { type: Boolean, default: false },
+    showMenu: { type: Boolean, default: true }
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.btn--active::after {
+  content: '';
+  background-color: #419b84;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+}
+</style>
