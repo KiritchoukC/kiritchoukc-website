@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col offset="4" cols="4" align-self="center">
         <v-row justify="center" align="center">
-          <p>Kiritchouk Clément - &copy; 2019</p>
+          <p>Designed & built by Kiritchouk Clément - &copy; 2019</p>
         </v-row>
       </v-col>
       <v-col cols="4">
@@ -66,4 +66,8 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.v-footer {
+  font-size: 16px;
+}
+</style>
