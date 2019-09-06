@@ -6,20 +6,20 @@
     flat
     color="transparent"
   >
-    <v-btn icon ripple to="/" nuxt>
+    <v-btn icon ripple to="/" nuxt class="mr-3">
       <logo :height="'40px'" :width="'40px'"></logo>
     </v-btn>
-    <template v-if="showMenu">
-      <v-btn text ripple to="/projects" nuxt active-class="btn--active"
+    <transition-group v-if="showMenu" appear name="menu">
+      <v-btn :key="0" text ripple to="/projects" nuxt active-class="btn--active"
         >Projects</v-btn
       >
-      <v-btn text ripple to="/contact" nuxt active-class="btn--active"
+      <v-btn :key="1" text ripple to="/contact" nuxt active-class="btn--active"
         >Contact</v-btn
       >
-      <v-btn text ripple to="/about" nuxt active-class="btn--active"
+      <v-btn :key="2" text ripple to="/about" nuxt active-class="btn--active"
         >About</v-btn
       >
-    </template>
+    </transition-group>
     <div class="flex-grow-1"></div>
     <v-btn icon>
       <github-logo
@@ -73,9 +73,19 @@ export default {
 .btn--active::after {
   content: '';
   background-color: #419b84;
-  width: 100%;
+  width: 70%;
   height: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
+}
+
+.menu-enter-active,
+.menu-leave-active {
+  transition: opacity 0.5s;
+  will-change: opacity;
+}
+.menu-enter,
+.menu-leave-to {
+  opacity: 0;
 }
 </style>
