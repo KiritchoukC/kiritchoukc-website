@@ -1,17 +1,22 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row justify="center" align="center" class="fill-height">
     <v-col cols="6">
-      <v-form v-model="valid" lazy-validation>
+      <p class="display-1">Get in touch !</p>
+      <p class="subtitle-2 grey--text text--darken-1">
+        Feel free to send me a message
+      </p>
+      <v-form v-model="valid">
         <v-text-field
           ref="emailField"
           v-model="email"
           :rules="emailRules"
-          label="E-mail"
+          label="Your E-mail"
           required
           filled
           rounded
-          validate-on-blur
           clearable
+          validate-on-blur
+          prepend-icon="mdi-at"
         ></v-text-field>
 
         <v-text-field
@@ -22,8 +27,9 @@
           required
           filled
           rounded
-          validate-on-blur
           clearable
+          validate-on-blur
+          prepend-icon="mdi-bullseye-arrow"
         ></v-text-field>
         <v-textarea
           ref="messageField"
@@ -35,12 +41,12 @@
           rounded
           clearable
           height="100%"
-          @blur="validate"
         ></v-textarea>
-
-        <v-btn :disabled="!valid" color="success" class="mr-4">
-          <v-icon class="mr-3">mdi-send</v-icon>Send
-        </v-btn>
+        <v-row justify="end" align="center">
+          <v-btn :disabled="!valid" color="accent" class="mr-4">
+            <v-icon class="mr-3">mdi-send</v-icon>Send
+          </v-btn>
+        </v-row>
       </v-form>
     </v-col>
   </v-row>
@@ -65,21 +71,7 @@ export default {
       (v) => !!v || 'Message is required',
       (v) => (v && v.length >= 10) || 'Message must be more than 10 characters'
     ]
-  }),
-  mounted() {
-    this.valid = false
-  },
-  methods: {
-    validate() {
-      this.valid = true
-      // eslint-disable-next-line no-console
-      console.log({
-        emailField: this.$refs.emailField,
-        subjectField: this.$refs.subjectField,
-        messageField: this.$refs.messageField
-      })
-    }
-  }
+  })
 }
 </script>
 
