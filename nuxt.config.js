@@ -62,6 +62,9 @@ module.exports = {
     treeShake: true,
     customVariables: ['~/assets/variables.scss'],
     theme: {
+      options: {
+        customProperties: true
+      },
       dark: false,
       themes: {
         dark: {

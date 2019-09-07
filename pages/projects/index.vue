@@ -4,22 +4,22 @@
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">
-              {{ item.year }}
-            </span>
+            <span class="grey--text text--darken-5 display-1">{{
+              item.year
+            }}</span>
           </v-timeline-item>
           <v-timeline-item
             v-for="(project, j) in item.projects"
             :key="j"
             small
-            color="#419B84"
+            color="accent"
           >
             <v-card>
               <v-list-item four-line>
                 <v-list-item-content class="align-self-start">
-                  <v-list-item-title class="headline mb-2">{{
-                    project.title
-                  }}</v-list-item-title>
+                  <v-list-item-title class="headline mb-2">
+                    {{ project.title }}
+                  </v-list-item-title>
 
                   <v-list-item-subtitle
                     v-text="project.subtitle"

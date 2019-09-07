@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark absolute app color="rgb(7, 43, 32)">
+  <v-footer dark absolute app color="accent darken-4">
     <v-row justify="center" align="center">
       <v-col offset="4" cols="4" align-self="center">
         <v-row justify="center" align="center">

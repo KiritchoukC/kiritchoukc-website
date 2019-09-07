@@ -36,6 +36,10 @@ hr {
 }
 
 .app-card {
-  background: linear-gradient(to top left, #1c463b, #1c2825);
+  background: linear-gradient(
+    to top left,
+    var(--v-accent-darken3),
+    var(--v-accent-darken4)
+  );
 }
 </style>
