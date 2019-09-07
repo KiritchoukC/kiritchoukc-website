@@ -130,6 +130,9 @@ export default {
     clear() {
       this.$refs.form.reset()
     }
+  },
+  transition: {
+    name: 'fade'
   }
 }
 </script>

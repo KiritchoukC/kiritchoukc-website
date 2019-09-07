@@ -8,9 +8,7 @@
       <v-card-text>
         <p class="display-2 grey--text text--lighten-1">About</p>
         <hr class="mt-8 grey" />
-        <p class="mt-1 subtitle-1 grey--text text--lighten-5">
-          If you want to know more about me
-        </p>
+        <p class="mt-1 subtitle-1 grey--text text--lighten-5">Who am I ?</p>
       </v-card-text>
     </v-img>
   </v-card>

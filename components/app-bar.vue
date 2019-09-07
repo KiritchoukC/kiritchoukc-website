@@ -72,7 +72,7 @@ export default {
 <style lang="scss" scoped>
 .btn--active::after {
   content: '';
-  background-color: #419b84;
+  background-color: var(--v-accent-base);
   width: 70%;
   height: 2px;
   position: absolute;
