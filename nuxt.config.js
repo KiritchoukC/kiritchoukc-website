@@ -31,6 +31,8 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+
+  serverMiddleware: ['~/api/contact'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -60,6 +62,9 @@ module.exports = {
     treeShake: true,
     customVariables: ['~/assets/variables.scss'],
     theme: {
+      options: {
+        customProperties: true
+      },
       dark: false,
       themes: {
         dark: {
@@ -73,6 +78,7 @@ module.exports = {
           anchor: colors.grey.lighten2
         },
         light: {
+          accent: '#419B84',
           anchor: colors.grey.darken1
         }
       }
@@ -85,6 +91,10 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+    }
   }
 }

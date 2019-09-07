@@ -12,7 +12,7 @@
             v-for="(project, j) in item.projects"
             :key="j"
             small
-            color="#419B84"
+            color="accent"
           >
             <v-card>
               <v-list-item four-line>
@@ -189,6 +189,9 @@ export default {
         }
       ]
     }
+  },
+  transition: {
+    name: 'fade'
   }
 }
 </script>
