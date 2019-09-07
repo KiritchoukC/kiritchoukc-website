@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  transition: {
+    name: 'fade'
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -20,6 +20,9 @@ export default {
   components: {
     start,
     home
+  },
+  transition: {
+    name: 'fade'
   }
 }
 </script>
