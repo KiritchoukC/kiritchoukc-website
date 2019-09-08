@@ -46,6 +46,12 @@ const validateAndSanitize = (key, value) => {
 }
 
 async function sendMail(subject, from, text) {
+  // eslint-disable-next-line no-console
+  console.log({
+    mailTo: process.env.MAIL_TO,
+    user: process.env.GMAIL_USER,
+    password: process.env.GMAIL_PASSWORD
+  })
   const to = process.env.MAIL_TO
 
   // create reusable transporter object using the default SMTP transport
