@@ -1,10 +1,10 @@
 # kiritchoukc
 
-> My superb Nuxt.js project
+> My personal website
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
