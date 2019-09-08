@@ -4,6 +4,8 @@
   "description": "My superb Nuxt.js project",
   "author": "KiritchoukC",
   "private": false,
+  "repository": "https://github.com/KiritchoukC/kiritchoukc.git",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
