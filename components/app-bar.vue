@@ -22,30 +22,39 @@
     </transition-group>
     <div class="flex-grow-1"></div>
     <v-btn icon>
-      <github-logo
-        :height="'30px'"
-        :width="'30px'"
-        class="grey--text text--darken-1"
-        style="fill:currentColor"
-      ></github-logo>
+      <a href="https://github.com/KiritchoukC" target="_blank">
+        <github-logo
+          :height="'30px'"
+          :width="'30px'"
+          class="grey--text text--darken-1"
+          style="fill:currentColor"
+        ></github-logo>
+      </a>
     </v-btn>
 
     <v-btn icon>
-      <twitter-logo
-        :height="'30px'"
-        :width="'30px'"
-        class="grey--text text--darken-1"
-        style="fill:currentColor"
-      ></twitter-logo>
+      <a href="https://twitter.com/CKiritchouk" target="_blank">
+        <twitter-logo
+          :height="'30px'"
+          :width="'30px'"
+          class="grey--text text--darken-1"
+          style="fill:currentColor"
+        ></twitter-logo>
+      </a>
     </v-btn>
 
     <v-btn icon>
-      <linkedin-logo
-        :height="'30px'"
-        :width="'30px'"
-        class="grey--text text--darken-1"
-        style="fill:currentColor"
-      ></linkedin-logo>
+      <a
+        href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
+        target="_blank"
+      >
+        <linkedin-logo
+          :height="'30px'"
+          :width="'30px'"
+          class="grey--text text--darken-1"
+          style="fill:currentColor"
+        ></linkedin-logo>
+      </a>
     </v-btn>
   </v-app-bar>
 </template>
