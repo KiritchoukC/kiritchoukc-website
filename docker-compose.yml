@@ -8,8 +8,8 @@ services:
       - VIRTUAL_HOST= www.kiritchoukc.com,kiritchoukc.com
       - LETSENCRYPT_HOST= www.kiritchoukc.com
       - LETSENCRYPT_EMAIL= clement.kiritchouk@protonmail.com
-      - GMAIL_USER = 'kiritchoukc@gmail.com'
-      - MAIL_TO = 'clement.kiritchouk@protonmail.com'
+      - GMAIL_USER = kiritchoukc@gmail.com
+      - MAIL_TO = clement.kiritchouk@protonmail.com
     container_name: kiritchoukc.com
     command: 'npm run start'
 
