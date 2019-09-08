@@ -74,6 +74,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'KiritchoukC - Contact'
+    }
+  },
   data: () => ({
     sending: false,
     valid: false,

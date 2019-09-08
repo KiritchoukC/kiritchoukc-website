@@ -35,6 +35,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'KiritchoukC - About'
+    }
+  },
   transition: {
     name: 'fade'
   }
