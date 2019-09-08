@@ -107,7 +107,7 @@ export default {
       if (isFormValid) {
         this.sending = true
         try {
-          await fetch('/api/contact', {
+          const response = await fetch('/api/contact', {
             method: 'POST',
             headers: {
               Accept: 'application/json',
@@ -119,18 +119,30 @@ export default {
               message: this.message
             })
           })
-          this.success = true
+
+          const json = await response.json()
+
+          if (json.error) {
+            this.showError(
+              '<strong>Oups !</strong> 😐, something went wrong. <br />Reach me on <a class="white--text" href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/" target="_blank">LinkedIn</a> 😊'
+            )
+          } else {
+            this.success = true
+            this.clear()
+          }
         } catch (error) {
-          this.errorMessage =
+          this.showError(
             '<strong>Oups !</strong> 😐, something went wrong. <br />Reach me on <a class="white--text" href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/" target="_blank">LinkedIn</a> 😊'
-          this.error = true
+          )
         }
       } else {
-        this.errorMessage = 'Form is invalid'
-        this.error = true
+        this.showError('Form is invalid 🤔')
       }
-      this.clear()
       this.sending = false
+    },
+    showError(message) {
+      this.errorMessage = message
+      this.error = true
     },
     clear() {
       this.$refs.form.reset()
