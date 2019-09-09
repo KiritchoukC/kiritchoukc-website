@@ -1,12 +1,17 @@
 <template>
   <v-row justify="center" align="center">
     <v-col :cols="$vuetify.breakpoint.smAndUp ? 6 : 12">
+      <p class="display-1">Projects history</p>
+      <p class="subtitle-2 grey--text text--darken-1">
+        All the projects I've been involved with during my career
+      </p>
+
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">
-              {{ item.year }}
-            </span>
+            <span class="grey--text text--darken-5 display-1">{{
+              item.year
+            }}</span>
           </v-timeline-item>
 
           <v-timeline-item
