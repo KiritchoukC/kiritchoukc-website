@@ -6,9 +6,25 @@
       align="center"
       style="width:100vw; margin-top:100px;"
     >
-      <projects-card style="margin-right:20px"></projects-card>
-      <contact-card></contact-card>
-      <about-card style="margin-left:20px;"></about-card>
+      <projects-card
+        :style="
+          $vuetify.breakpoint.smAndUp
+            ? 'margin-right:20px'
+            : 'width:90vw; margin-bottom:20px;'
+        "
+      ></projects-card>
+      <contact-card
+        :style="
+          $vuetify.breakpoint.smAndUp ? '' : 'width:90vw; margin-bottom:20px;'
+        "
+      ></contact-card>
+      <about-card
+        :style="
+          $vuetify.breakpoint.smAndUp
+            ? 'margin-left:20px'
+            : 'width:90vw; margin-bottom:40px;'
+        "
+      ></about-card>
     </v-row>
   </div>
 </template>

@@ -1,7 +1,16 @@
 <template>
-  <v-card dark ripple min-height="700" hover to="/about" nuxt width="400">
+  <v-card
+    dark
+    ripple
+    :min-height="$vuetify.breakpoint.smAndUp ? 700 : 450"
+    hover
+    to="/about"
+    nuxt
+    width="400"
+  >
     <v-img
-      height="700px"
+      position="top center"
+      :height="$vuetify.breakpoint.smAndUp ? '700px' : '450px'"
       src="/media/Me.jpg"
       gradient="to top left, #000000BB, #000000BB, #000000BB"
     >

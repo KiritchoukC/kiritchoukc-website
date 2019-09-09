@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="6">
+    <v-col :cols="$vuetify.breakpoint.smAndUp ? 6 : 12">
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="i" color="transparent" hide-dot>
@@ -8,6 +8,7 @@
               {{ item.year }}
             </span>
           </v-timeline-item>
+
           <v-timeline-item
             v-for="(project, j) in item.projects"
             :key="j"
@@ -15,13 +16,24 @@
             color="accent"
           >
             <v-card>
+              <v-chip
+                v-if="!$vuetify.breakpoint.smAndUp"
+                small
+                pill
+                color="accent lighten-2"
+                style="position: absolute; top:-12px; right:0;"
+                >{{ project.tag }}</v-chip
+              >
               <v-list-item four-line>
                 <v-list-item-content class="align-self-start">
-                  <v-list-item-title class="headline mb-2">{{
-                    project.title
-                  }}</v-list-item-title>
+                  <v-list-item-title
+                    class="headline mb-2"
+                    style="white-space: unset"
+                    >{{ project.title }}</v-list-item-title
+                  >
 
                   <v-list-item-subtitle
+                    style="white-space: unset"
                     v-text="project.subtitle"
                   ></v-list-item-subtitle>
                   <span
@@ -39,7 +51,10 @@
                   </span>
                 </v-list-item-content>
 
-                <v-list-item-avatar size="125">
+                <v-list-item-avatar
+                  v-if="$vuetify.breakpoint.smAndUp"
+                  size="125"
+                >
                   <v-img :src="project.src"></v-img>
                 </v-list-item-avatar>
               </v-list-item>
@@ -55,7 +70,7 @@
 export default {
   head() {
     return {
-      title: 'KiritchoukC - Projects'
+      title: 'Projects'
     }
   },
   data() {

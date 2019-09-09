@@ -1,14 +1,69 @@
 <template>
   <v-footer dark absolute app color="accent darken-4">
     <v-row justify="center" align="center">
-      <v-col offset="4" cols="4" align-self="center">
+      <v-col
+        :offset="$vuetify.breakpoint.mdAndUp ? 4 : 0"
+        :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12"
+        align-self="center"
+      >
         <v-row justify="center" align="center">
           <p>Designed & built by Kiritchouk Clément - &copy; 2019</p>
         </v-row>
+        <v-template v-if="!$vuetify.breakpoint.mdAndUp">
+          <v-row align="center" style="justify-content: space-evenly">
+            <v-btn icon>
+              <a
+                href="https://github.com/KiritchoukC"
+                target="_blank"
+                rel="noopener"
+              >
+                <github-logo
+                  :height="'40px'"
+                  :width="'40px'"
+                  class="grey--text text--lighten-1"
+                  style="fill:currentColor"
+                ></github-logo>
+              </a>
+            </v-btn>
+
+            <v-btn icon>
+              <a
+                href="https://twitter.com/CKiritchouk"
+                target="_blank"
+                rel="noopener"
+              >
+                <twitter-logo
+                  :height="'40px'"
+                  :width="'40px'"
+                  class="grey--text text--lighten-1"
+                  style="fill:currentColor"
+                ></twitter-logo>
+              </a>
+            </v-btn>
+
+            <v-btn icon>
+              <a
+                href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
+                target="_blank"
+                rel="noopener"
+              >
+                <linkedin-logo
+                  :height="'40px'"
+                  :width="'40px'"
+                  class="grey--text text--lighten-1"
+                  style="fill:currentColor"
+                ></linkedin-logo>
+              </a>
+            </v-btn>
+          </v-row>
+        </v-template>
       </v-col>
-      <v-col cols="4">
+      <v-col :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12">
         <v-row>
-          <v-col>
+          <v-col
+            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
+            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+          >
             Github Icon made by
             <a
               href="https://www.flaticon.com/authors/dave-gandy"
@@ -24,7 +79,10 @@
               >www.flaticon.com</a
             >
           </v-col>
-          <v-col>
+          <v-col
+            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
+            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+          >
             Twitter Icon made by
             <a
               href="https://www.flaticon.com/authors/pixel-perfect"
@@ -40,7 +98,10 @@
               >www.flaticon.com</a
             >
           </v-col>
-          <v-col>
+          <v-col
+            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
+            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+          >
             LinkedIn Icon made by
             <a
               href="https://www.flaticon.com/authors/simpleicon"
@@ -63,7 +124,17 @@
 </template>
 
 <script>
-export default {}
+import githubLogo from '@/components/github-logo.vue'
+import twitterLogo from '@/components/twitter-logo.vue'
+import linkedinLogo from '@/components/linkedin-logo.vue'
+
+export default {
+  components: {
+    githubLogo,
+    linkedinLogo,
+    twitterLogo
+  }
+}
 </script>
 
 <style lang="scss" scoped>
