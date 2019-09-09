@@ -18,7 +18,7 @@ import home from '@/components/home/home.vue'
 export default {
   head() {
     return {
-      title: 'KiritchoukC - Home'
+      title: 'Home'
     }
   },
   layout: 'home',
