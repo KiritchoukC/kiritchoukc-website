@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col :cols="$vuetify.breakpoint.smAndUp ? 6 : 12">
+    <v-col :cols="$breakpoint.is.smAndUp ? 6 : 12">
       <p class="display-1">Projects history</p>
       <p class="subtitle-2 grey--text text--darken-1">
         All the projects I've been involved with during my career
@@ -8,7 +8,7 @@
 
       <v-timeline dense>
         <template v-for="(item, i) in data">
-          <v-timeline-item :key="i" color="transparent" hide-dot>
+          <v-timeline-item :key="'year-' + i" color="transparent" hide-dot>
             <span class="grey--text text--darken-5 display-1">{{
               item.year
             }}</span>
@@ -16,13 +16,13 @@
 
           <v-timeline-item
             v-for="(project, j) in item.projects"
-            :key="j"
+            :key="item.year + '-project-' + j"
             small
             color="accent"
           >
             <v-card>
               <v-chip
-                v-if="!$vuetify.breakpoint.smAndUp"
+                v-if="!$breakpoint.is.smAndUp"
                 small
                 pill
                 color="accent lighten-2"
@@ -56,10 +56,7 @@
                   </span>
                 </v-list-item-content>
 
-                <v-list-item-avatar
-                  v-if="$vuetify.breakpoint.smAndUp"
-                  size="125"
-                >
+                <v-list-item-avatar v-if="$breakpoint.is.smAndUp" size="125">
                   <v-img :src="project.src"></v-img>
                 </v-list-item-avatar>
               </v-list-item>

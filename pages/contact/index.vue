@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center" class="fill-height">
-    <v-col :cols="$vuetify.breakpoint.smAndUp ? 6 : 12">
+    <v-col :cols="$breakpoint.is.smAndUp ? 6 : 12">
       <p class="display-1">Get in touch !</p>
       <p class="subtitle-2 grey--text text--darken-1">
         Feel free to send me a message

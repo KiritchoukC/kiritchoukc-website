@@ -1,7 +1,7 @@
 <template>
   <v-card
     ripple
-    :min-height="$vuetify.breakpoint.smAndUp ? 700 : 450"
+    :min-height="$breakpoint.is.smAndDown ? 450 : 700"
     hover
     to="/projects"
     nuxt

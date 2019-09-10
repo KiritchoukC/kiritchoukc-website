@@ -8,21 +8,21 @@
     >
       <projects-card
         :style="
-          $vuetify.breakpoint.smAndUp
-            ? 'margin-right:20px'
-            : 'width:90vw; margin-bottom:20px;'
+          $breakpoint.is.smAndDown
+            ? 'width:90vw; margin-bottom:20px;'
+            : 'margin-right:20px'
         "
       ></projects-card>
       <contact-card
         :style="
-          $vuetify.breakpoint.smAndUp ? '' : 'width:90vw; margin-bottom:20px;'
+          $breakpoint.is.smAndDown ? 'width:90vw; margin-bottom:20px;' : ''
         "
       ></contact-card>
       <about-card
         :style="
-          $vuetify.breakpoint.smAndUp
-            ? 'margin-left:20px'
-            : 'width:90vw; margin-bottom:40px;'
+          $breakpoint.is.smAndDown
+            ? 'width:90vw; margin-bottom:40px;'
+            : 'margin-left:20px'
         "
       ></about-card>
     </v-row>

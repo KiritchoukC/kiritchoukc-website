@@ -2,14 +2,14 @@
   <v-footer dark absolute app color="accent darken-4">
     <v-row justify="center" align="center">
       <v-col
-        :offset="$vuetify.breakpoint.mdAndUp ? 4 : 0"
-        :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12"
+        :offset="$breakpoint.is.mdAndUp ? 4 : 0"
+        :cols="$breakpoint.is.mdAndUp ? 4 : 12"
         align-self="center"
       >
         <v-row justify="center" align="center">
           <p>Designed & built by Kiritchouk Clément - &copy; 2019</p>
         </v-row>
-        <v-template v-if="!$vuetify.breakpoint.mdAndUp">
+        <template v-if="!$breakpoint.is.mdAndUp">
           <v-row align="center" style="justify-content: space-evenly">
             <v-btn icon>
               <a
@@ -56,13 +56,13 @@
               </a>
             </v-btn>
           </v-row>
-        </v-template>
+        </template>
       </v-col>
-      <v-col :cols="$vuetify.breakpoint.mdAndUp ? 4 : 12">
+      <v-col :cols="$breakpoint.is.mdAndUp ? 4 : 12">
         <v-row>
           <v-col
-            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
-            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+            :cols="$breakpoint.is.mdAndUp ? 0 : 12"
+            :class="$breakpoint.is.mdAndUp ? '' : 'text-center'"
           >
             Github Icon made by
             <a
@@ -80,8 +80,8 @@
             >
           </v-col>
           <v-col
-            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
-            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+            :cols="$breakpoint.is.mdAndUp ? 0 : 12"
+            :class="$breakpoint.is.mdAndUp ? '' : 'text-center'"
           >
             Twitter Icon made by
             <a
@@ -99,8 +99,8 @@
             >
           </v-col>
           <v-col
-            :cols="$vuetify.breakpoint.mdAndUp ? 0 : 12"
-            :class="$vuetify.breakpoint.mdAndUp ? '' : 'text-center'"
+            :cols="$breakpoint.is.mdAndUp ? 0 : 12"
+            :class="$breakpoint.is.mdAndUp ? '' : 'text-center'"
           >
             LinkedIn Icon made by
             <a

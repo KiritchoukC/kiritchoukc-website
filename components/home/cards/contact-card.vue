@@ -2,7 +2,7 @@
   <v-card
     dark
     ripple
-    :min-height="$vuetify.breakpoint.smAndUp ? 700 : 450"
+    :min-height="$breakpoint.is.smAndUp ? 700 : 450"
     hover
     to="/contact"
     nuxt

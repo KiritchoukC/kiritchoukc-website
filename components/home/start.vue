@@ -5,7 +5,7 @@
     </v-col>
     <v-col cols="12">
       <v-row justify="center">
-        <div :class="$vuetify.breakpoint.mdAndUp ? 'mr-100' : 'mr-0'">
+        <div :class="$breakpoint.is.mdAndUp ? 'mr-100' : 'mr-0'">
           <logo></logo>
         </div>
         <div>
@@ -13,22 +13,20 @@
         </div>
         <div
           :style="
-            $vuetify.breakpoint.mdAndUp ? 'margin-left:60px; width:296px;' : ''
+            $breakpoint.is.mdAndUp ? 'margin-left:60px; width:296px;' : ''
           "
-          :class="$vuetify.breakpoint.mdAndUp ? '' : 'mx-4'"
+          :class="$breakpoint.is.mdAndUp ? '' : 'mx-4'"
         >
           <p
             :class="
-              $vuetify.breakpoint.mdAndUp
-                ? 'display-4'
-                : 'display-2 text-center'
+              $breakpoint.is.mdAndUp ? 'display-4' : 'display-2 text-center'
             "
           >
             Kiritchouk Clément
           </p>
           <p
             :class="
-              $vuetify.breakpoint.mdAndUp
+              $breakpoint.is.mdAndUp
                 ? 'grey--text text-darken-1 display-1 mt-8'
                 : 'grey--text text-darken-1 headline mt-8 text-center'
             "
@@ -73,8 +71,8 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    handleScroll({ pageY }) {
-      this.chevronDownOpacity = 0.8 - pageY / 1000
+    handleScroll(e) {
+      this.chevronDownOpacity = 0.8 - window.scrollY / 1000
     }
   }
 }

@@ -2,16 +2,16 @@
   <v-app-bar
     app
     :scroll-threshold="
-      $vuetify.breakpoint.smAndUp ? (scrollable ? '600' : '0') : '9999'
+      $breakpoint.is.smAndUp ? (scrollable ? '600' : '0') : '9999'
     "
     :inverted-scroll="scrollable"
     flat
-    :color="$vuetify.breakpoint.smAndUp ? 'transparent' : 'white'"
+    :color="$breakpoint.is.smAndUp ? 'transparent' : 'white'"
   >
     <v-btn icon ripple to="/" nuxt class="mr-3">
       <logo :height="'40px'" :width="'40px'"></logo>
     </v-btn>
-    <template v-if="$vuetify.breakpoint.smAndUp">
+    <template v-if="$breakpoint.is.smAndUp">
       <transition-group v-if="showMenu" appear name="menu">
         <v-btn
           :key="0"
@@ -77,7 +77,7 @@
       </transition-group>
     </template>
     <div class="flex-grow-1"></div>
-    <v-template v-if="$vuetify.breakpoint.smAndUp">
+    <template v-if="$breakpoint.is.smAndUp">
       <v-btn icon>
         <a href="https://github.com/KiritchoukC" target="_blank" rel="noopener">
           <github-logo
@@ -118,7 +118,7 @@
           ></linkedin-logo>
         </a>
       </v-btn>
-    </v-template>
+    </template>
   </v-app-bar>
 </template>
 <script>
