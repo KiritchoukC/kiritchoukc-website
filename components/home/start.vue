@@ -1,20 +1,35 @@
 <template>
   <v-row justify="center" style="height:97vh;">
-    <v-col>
+    <v-col class="d-none d-md-flex">
       <v-spacer></v-spacer>
     </v-col>
     <v-col cols="12">
       <v-row justify="center">
-        <div style="margin-right:100px;">
+        <div :class="$breakpoint.is.mdAndUp ? 'mr-100' : 'mr-0'">
           <logo></logo>
         </div>
         <div>
-          <div class="hr--vertical"></div>
+          <div class="hr--vertical d-none d-md-flex"></div>
         </div>
-        <div style="margin-left:60px; width:296px;">
-          <p class="display-4">Kiritchouk Clément</p>
+        <div
+          :style="
+            $breakpoint.is.mdAndUp ? 'margin-left:60px; width:296px;' : ''
+          "
+          :class="$breakpoint.is.mdAndUp ? '' : 'mx-4'"
+        >
           <p
-            class="grey--text text-darken-1 display-1 mt-8"
+            :class="
+              $breakpoint.is.mdAndUp ? 'display-4' : 'display-2 text-center'
+            "
+          >
+            Kiritchouk Clément
+          </p>
+          <p
+            :class="
+              $breakpoint.is.mdAndUp
+                ? 'grey--text text-darken-1 display-1 mt-8'
+                : 'grey--text text-darken-1 headline mt-8 text-center'
+            "
             style="white-space: nowrap"
           >
             Software Developer
@@ -56,8 +71,8 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    handleScroll({ pageY }) {
-      this.chevronDownOpacity = 0.8 - pageY / 1000
+    handleScroll(e) {
+      this.chevronDownOpacity = 0.8 - window.scrollY / 1000
     }
   }
 }
@@ -69,5 +84,9 @@ export default {
   width: 5px;
   height: 260px;
   background-color: #000;
+}
+
+.mr-100 {
+  margin-right: 100px;
 }
 </style>

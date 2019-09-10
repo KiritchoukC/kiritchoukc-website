@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center" class="fill-height">
-    <v-col cols="6">
+    <v-col :cols="$breakpoint.is.smAndUp ? 6 : 12">
       <p class="display-1">About me...</p>
       <p class="title">How did I become a developer</p>
       <p class="body-1">
@@ -37,7 +37,7 @@
 export default {
   head() {
     return {
-      title: 'KiritchoukC - About'
+      title: 'About'
     }
   },
   transition: {

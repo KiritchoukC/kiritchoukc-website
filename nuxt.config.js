@@ -6,7 +6,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: 'KiritchoukC - %s',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -30,7 +30,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/breakpoint'],
 
   serverMiddleware: ['~/api/contact'],
   /*

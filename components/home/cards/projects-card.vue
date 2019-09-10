@@ -1,5 +1,12 @@
 <template>
-  <v-card ripple min-height="700" hover to="/projects" nuxt width="400">
+  <v-card
+    ripple
+    :min-height="$breakpoint.is.smAndDown ? 450 : 700"
+    hover
+    to="/projects"
+    nuxt
+    width="400"
+  >
     <v-card-text>
       <p class="display-2">Projects</p>
       <hr class="mt-8 grey" />

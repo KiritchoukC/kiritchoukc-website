@@ -6,9 +6,25 @@
       align="center"
       style="width:100vw; margin-top:100px;"
     >
-      <projects-card style="margin-right:20px"></projects-card>
-      <contact-card></contact-card>
-      <about-card style="margin-left:20px;"></about-card>
+      <projects-card
+        :style="
+          $breakpoint.is.smAndDown
+            ? 'width:90vw; margin-bottom:20px;'
+            : 'margin-right:20px'
+        "
+      ></projects-card>
+      <contact-card
+        :style="
+          $breakpoint.is.smAndDown ? 'width:90vw; margin-bottom:20px;' : ''
+        "
+      ></contact-card>
+      <about-card
+        :style="
+          $breakpoint.is.smAndDown
+            ? 'width:90vw; margin-bottom:40px;'
+            : 'margin-left:20px'
+        "
+      ></about-card>
     </v-row>
   </div>
 </template>

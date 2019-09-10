@@ -1,27 +1,44 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="6">
+    <v-col :cols="$breakpoint.is.smAndUp ? 6 : 12">
+      <p class="display-1">Projects history</p>
+      <p class="subtitle-2 grey--text text--darken-1">
+        All the projects I've been involved with during my career
+      </p>
+
       <v-timeline dense>
         <template v-for="(item, i) in data">
-          <v-timeline-item :key="i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">
-              {{ item.year }}
-            </span>
+          <v-timeline-item :key="'year-' + i" color="transparent" hide-dot>
+            <span class="grey--text text--darken-5 display-1">{{
+              item.year
+            }}</span>
           </v-timeline-item>
+
           <v-timeline-item
             v-for="(project, j) in item.projects"
-            :key="j"
+            :key="item.year + '-project-' + j"
             small
             color="accent"
           >
             <v-card>
+              <v-chip
+                v-if="!$breakpoint.is.smAndUp"
+                small
+                pill
+                color="accent lighten-2"
+                style="position: absolute; top:-12px; right:0;"
+                >{{ project.tag }}</v-chip
+              >
               <v-list-item four-line>
                 <v-list-item-content class="align-self-start">
-                  <v-list-item-title class="headline mb-2">{{
-                    project.title
-                  }}</v-list-item-title>
+                  <v-list-item-title
+                    class="headline mb-2"
+                    style="white-space: unset"
+                    >{{ project.title }}</v-list-item-title
+                  >
 
                   <v-list-item-subtitle
+                    style="white-space: unset"
                     v-text="project.subtitle"
                   ></v-list-item-subtitle>
                   <span
@@ -39,7 +56,7 @@
                   </span>
                 </v-list-item-content>
 
-                <v-list-item-avatar size="125">
+                <v-list-item-avatar v-if="$breakpoint.is.smAndUp" size="125">
                   <v-img :src="project.src"></v-img>
                 </v-list-item-avatar>
               </v-list-item>
@@ -55,7 +72,7 @@
 export default {
   head() {
     return {
-      title: 'KiritchoukC - Projects'
+      title: 'Projects'
     }
   },
   data() {

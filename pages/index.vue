@@ -1,13 +1,13 @@
 <template>
   <v-container class="fill-height">
-    <v-col>
-      <v-row>
+    <v-row>
+      <v-col>
         <start></start>
-      </v-row>
-      <v-row>
+      </v-col>
+      <v-col>
         <home></home>
-      </v-row>
-    </v-col>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -18,7 +18,7 @@ import home from '@/components/home/home.vue'
 export default {
   head() {
     return {
-      title: 'KiritchoukC - Home'
+      title: 'Home'
     }
   },
   layout: 'home',
