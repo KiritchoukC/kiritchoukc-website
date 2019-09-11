@@ -141,7 +141,7 @@
 import githubLogo from '@/components/github-logo.vue'
 import twitterLogo from '@/components/twitter-logo.vue'
 import linkedinLogo from '@/components/linkedin-logo.vue'
-import logo from '@/components/small-logo.vue'
+import logo from '@/components/logo.vue'
 
 export default {
   components: {

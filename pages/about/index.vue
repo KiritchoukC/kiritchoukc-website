@@ -28,7 +28,12 @@
         PWA, ...).
       </p>
       <p class="title">Meet my family</p>
-      <v-img class="elevation-6" src="/media/family.jpg"></v-img>
+      <v-img
+        class="elevation-6"
+        src="/media/family_238px.jpg"
+        srcset="/media/family_950px.jpg 950w, /media/family_713px.jpg 713w, /media/family_475px.jpg 475w, /media/family_238px.jpg 238w"
+        width="950px"
+      ></v-img>
     </v-col>
   </v-row>
 </template>

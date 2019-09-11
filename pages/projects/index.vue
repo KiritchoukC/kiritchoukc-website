@@ -9,9 +9,9 @@
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="'year-' + i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">
-              {{ item.year }}
-            </span>
+            <span class="grey--text text--darken-5 display-1">{{
+              item.year
+            }}</span>
           </v-timeline-item>
 
           <v-timeline-item
@@ -90,7 +90,7 @@ export default {
               framework. <br />
               The website, the nginx reverse proxy and the https encryption are in containers. <br />
               Containers are hosted on a <a href="https://www.vultr.com/" target="_blank">Vultr</a> Ubuntu virtual private server`,
-              src: '/media/logo.png',
+              src: '/media/logo_128px.png',
               source: {
                 url: 'https://github.com/KiritchoukC/kiritchoukc',
                 alt: 'Github kiritchoukc repository',

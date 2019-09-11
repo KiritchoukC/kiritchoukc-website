@@ -27,7 +27,7 @@
               </a>
             </v-btn>
 
-            <v-btn icontitle="Go to my Twitter profile">
+            <v-btn icon title="Go to my Twitter profile">
               <a
                 href="https://twitter.com/CKiritchouk"
                 target="_blank"
@@ -43,7 +43,7 @@
               </a>
             </v-btn>
 
-            <v-btn icontitle="Go to my LinkedIn profile">
+            <v-btn icon title="Go to my LinkedIn profile">
               <a
                 href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
                 target="_blank"

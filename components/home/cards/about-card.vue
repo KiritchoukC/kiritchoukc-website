@@ -11,7 +11,9 @@
     <v-img
       position="top center"
       :height="$breakpoint.is.smAndUp ? '700px' : '450px'"
-      src="/media/Me.jpg"
+      srcset="/media/me_400px.jpg 400w, /media/me_300px.jpg 300w, /media/me_200px.jpg 200w, /media/me_100px.jpg 100w"
+      src="/media/me_100px.jpg"
+      width="400px"
       gradient="to top left, #000000BB, #000000BB, #000000BB"
     >
       <v-card-text>
