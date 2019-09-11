@@ -85,6 +85,10 @@ module.exports = {
     }
   },
   /*
+   ** PWA configuration
+   */
+  pwa: {},
+  /*
    ** Build configuration
    */
   build: {

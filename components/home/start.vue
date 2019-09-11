@@ -27,8 +27,8 @@
           <p
             :class="
               $breakpoint.is.mdAndUp
-                ? 'grey--text text-darken-1 display-1 mt-8'
-                : 'grey--text text-darken-1 headline mt-8 text-center'
+                ? 'grey--text text-darken-2 display-1 mt-8'
+                : 'grey--text text-darken-2 headline mt-8 text-center'
             "
             style="white-space: nowrap"
           >

@@ -48,6 +48,7 @@
             color="accent"
             class="mr-4"
             :loading="sending"
+            title="Send mail"
             @click="sendMail"
           >
             <v-icon class="mr-3">mdi-send</v-icon>Send
@@ -57,7 +58,9 @@
       <v-snackbar v-model="error" absolute color="error" :timeout="10000">
         <v-row justify="space-between" align="center" class="px-4">
           <p class="red--text text--lighten-5 body-2" v-html="errorMessage"></p>
-          <v-btn dark text @click="error = false">Close</v-btn>
+          <v-btn dark text title="Close the message" @click="error = false"
+            >Close</v-btn
+          >
         </v-row>
       </v-snackbar>
       <v-snackbar v-model="success" absolute color="success" :timeout="10000">
@@ -65,7 +68,9 @@
           <p class="green--text text--lighten-5 body-2">
             Email successfully sent !
           </p>
-          <v-btn dark text @click="success = false">Close</v-btn>
+          <v-btn title="Close the message" dark text @click="success = false"
+            >Close</v-btn
+          >
         </v-row>
       </v-snackbar>
     </v-col>

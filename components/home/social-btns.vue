@@ -1,7 +1,12 @@
 <template>
   <v-row justify="space-around">
     <v-hover v-slot:default="{ hover }">
-      <a href="https://github.com/KiritchoukC" target="_blank" rel="noopener">
+      <a
+        href="https://github.com/KiritchoukC"
+        target="_blank"
+        rel="noopener"
+        aria-label="Go to my Github profile"
+      >
         <github-logo
           :class="
             hover ? 'grey--text text--darken-2' : 'grey--text text--darken-1'
@@ -11,7 +16,12 @@
       </a>
     </v-hover>
     <v-hover v-slot:default="{ hover }">
-      <a href="https://twitter.com/CKiritchouk" target="_blank" rel="noopener">
+      <a
+        href="https://twitter.com/CKiritchouk"
+        target="_blank"
+        rel="noopener"
+        aria-label="Go to my Twitter profile"
+      >
         <twitter-logo
           :class="
             hover ? 'grey--text text--darken-2' : 'grey--text text--darken-1'
@@ -25,6 +35,7 @@
         href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
         target="_blank"
         rel="noopener"
+        aria-label="Go to my LinkedIn profile"
       >
         <linkedin-logo
           :class="

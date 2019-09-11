@@ -8,13 +8,14 @@
     flat
     :color="$breakpoint.is.smAndUp ? 'transparent' : 'white'"
   >
-    <v-btn icon ripple to="/" nuxt class="mr-3">
+    <v-btn icon ripple to="/" nuxt class="mr-3" title="Kiritchouk Clément Logo">
       <logo :height="'40px'" :width="'40px'"></logo>
     </v-btn>
     <template v-if="$breakpoint.is.smAndUp">
       <transition-group v-if="showMenu" appear name="menu">
         <v-btn
           :key="0"
+          title="Go to Projects page"
           text
           ripple
           to="/projects"
@@ -24,6 +25,7 @@
         >
         <v-btn
           :key="1"
+          title="Go to Contact page"
           text
           ripple
           to="/contact"
@@ -31,7 +33,14 @@
           active-class="btn--active"
           >Contact</v-btn
         >
-        <v-btn :key="2" text ripple to="/about" nuxt active-class="btn--active"
+        <v-btn
+          :key="2"
+          title="Go to About page"
+          text
+          ripple
+          to="/about"
+          nuxt
+          active-class="btn--active"
           >About</v-btn
         >
       </transition-group>
@@ -78,8 +87,13 @@
     </template>
     <div class="flex-grow-1"></div>
     <template v-if="$breakpoint.is.smAndUp">
-      <v-btn icon>
-        <a href="https://github.com/KiritchoukC" target="_blank" rel="noopener">
+      <v-btn icon title="Go to my Github profile">
+        <a
+          href="https://github.com/KiritchoukC"
+          target="_blank"
+          rel="noopener"
+          aria-label="Go to my Github profile"
+        >
           <github-logo
             :height="'30px'"
             :width="'30px'"
@@ -89,11 +103,12 @@
         </a>
       </v-btn>
 
-      <v-btn icon>
+      <v-btn icon title="Go to my Twitter profile">
         <a
           href="https://twitter.com/CKiritchouk"
           target="_blank"
           rel="noopener"
+          aria-label="Go to my Twitter profile"
         >
           <twitter-logo
             :height="'30px'"
@@ -104,11 +119,12 @@
         </a>
       </v-btn>
 
-      <v-btn icon>
+      <v-btn icon title="Go to my LinkedIn profile">
         <a
           href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
           target="_blank"
           rel="noopener"
+          aria-label="Go to my LinkedIn profile"
         >
           <linkedin-logo
             :height="'30px'"
