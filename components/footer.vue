@@ -11,7 +11,7 @@
         </v-row>
         <template v-if="!$breakpoint.is.mdAndUp">
           <v-row align="center" style="justify-content: space-evenly">
-            <v-btn icon>
+            <v-btn icon title="Go to my github profile">
               <a
                 href="https://github.com/KiritchoukC"
                 target="_blank"
@@ -26,7 +26,7 @@
               </a>
             </v-btn>
 
-            <v-btn icon>
+            <v-btn icontitle="Go to my twitter profile">
               <a
                 href="https://twitter.com/CKiritchouk"
                 target="_blank"
@@ -41,7 +41,7 @@
               </a>
             </v-btn>
 
-            <v-btn icon>
+            <v-btn icontitle="Go to my LinkedIn profile">
               <a
                 href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
                 target="_blank"
