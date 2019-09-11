@@ -11,11 +11,12 @@
         </v-row>
         <template v-if="!$breakpoint.is.mdAndUp">
           <v-row align="center" style="justify-content: space-evenly">
-            <v-btn icon title="Go to my github profile">
+            <v-btn icon title="Go to my Github profile">
               <a
                 href="https://github.com/KiritchoukC"
                 target="_blank"
                 rel="noopener"
+                aria-label="Go to my Github profile"
               >
                 <github-logo
                   :height="'40px'"
@@ -26,11 +27,12 @@
               </a>
             </v-btn>
 
-            <v-btn icontitle="Go to my twitter profile">
+            <v-btn icontitle="Go to my Twitter profile">
               <a
                 href="https://twitter.com/CKiritchouk"
                 target="_blank"
                 rel="noopener"
+                aria-label="Go to my Twitter profile"
               >
                 <twitter-logo
                   :height="'40px'"
@@ -46,6 +48,7 @@
                 href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Go to my LinkedIn profile"
               >
                 <linkedin-logo
                   :height="'40px'"
@@ -69,6 +72,7 @@
               href="https://www.flaticon.com/authors/dave-gandy"
               title="Dave Gandy"
               class="grey--text text--lighten-1"
+              aria-label="Go to my Dave Gandy FlatIcon profile"
               >Dave Gandy</a
             >
             from
@@ -76,6 +80,7 @@
               href="https://www.flaticon.com/"
               title="Flaticon"
               class="grey--text text--lighten-1"
+              aria-label="Go to my FlatIcon"
               >www.flaticon.com</a
             >
           </v-col>
@@ -88,6 +93,7 @@
               href="https://www.flaticon.com/authors/pixel-perfect"
               title="Pixel perfect"
               class="grey--text text--lighten-1"
+              aria-label="Go to my Dave Pixel Perfect profile"
               >Pixel perfect</a
             >
             from
@@ -95,6 +101,7 @@
               href="https://www.flaticon.com/"
               title="Flaticon"
               class="grey--text text--lighten-1"
+              aria-label="Go to my FlatIcon"
               >www.flaticon.com</a
             >
           </v-col>
@@ -107,6 +114,7 @@
               href="https://www.flaticon.com/authors/simpleicon"
               title="SimpleIcon"
               class="grey--text text--lighten-1"
+              aria-label="Go to my SimpleIcon FlatIcon profile"
               >SimpleIcon</a
             >
             from
@@ -114,6 +122,7 @@
               href="https://www.flaticon.com/"
               title="Flaticon"
               class="grey--text text--lighten-1"
+              aria-label="Go to my FlatIcon"
               >www.flaticon.com</a
             >
           </v-col>

@@ -9,9 +9,9 @@
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="'year-' + i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">{{
-              item.year
-            }}</span>
+            <span class="grey--text text--darken-5 display-1">
+              {{ item.year }}
+            </span>
           </v-timeline-item>
 
           <v-timeline-item
@@ -51,6 +51,7 @@
                       :href="project.source.url"
                       :alt="project.source.alt"
                       :title="project.source.title"
+                      aria-label="Go to project's source"
                       >{{ project.source.url }}</a
                     >
                   </span>

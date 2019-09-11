@@ -88,7 +88,12 @@
     <div class="flex-grow-1"></div>
     <template v-if="$breakpoint.is.smAndUp">
       <v-btn icon title="Go to my Github profile">
-        <a href="https://github.com/KiritchoukC" target="_blank" rel="noopener">
+        <a
+          href="https://github.com/KiritchoukC"
+          target="_blank"
+          rel="noopener"
+          aria-label="Go to my Github profile"
+        >
           <github-logo
             :height="'30px'"
             :width="'30px'"
@@ -103,6 +108,7 @@
           href="https://twitter.com/CKiritchouk"
           target="_blank"
           rel="noopener"
+          aria-label="Go to my Twitter profile"
         >
           <twitter-logo
             :height="'30px'"
@@ -118,6 +124,7 @@
           href="https://www.linkedin.com/in/cl%C3%A9ment-kiritchouk-46a666127/"
           target="_blank"
           rel="noopener"
+          aria-label="Go to my LinkedIn profile"
         >
           <linkedin-logo
             :height="'30px'"
