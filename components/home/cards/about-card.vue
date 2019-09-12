@@ -11,8 +11,8 @@
     <v-img
       position="top center"
       :height="$breakpoint.is.smAndUp ? '700px' : '450px'"
-      srcset="/media/me_400px.jpg 400w, /media/me_300px.jpg 300w, /media/me_200px.jpg 200w, /media/me_100px.jpg 100w"
-      src="/media/me_100px.jpg"
+      srcset="/media/me_400px.webp 400w, /media/me_300px.webp 300w, /media/me_200px.webp 200w, /media/me_100px.webp 100w"
+      src="/media/me_100px.webp"
       width="400px"
       gradient="to top left, #000000BB, #000000BB, #000000BB"
     >
