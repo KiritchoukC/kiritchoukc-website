@@ -87,7 +87,18 @@ module.exports = {
   /*
    ** PWA configuration
    */
-  pwa: {},
+  pwa: {
+    manifest: {
+      bakground_color: '#95eed5',
+      name: 'Kiritchouk Clément Website',
+      short_name: 'KC Website',
+      description:
+        'My name is Clément Kiritchouk and this is my personal website',
+      lang: 'en-US',
+      theme_color: '#419B84',
+      display: 'standalone'
+    }
+  },
   /*
    ** Build configuration
    */
