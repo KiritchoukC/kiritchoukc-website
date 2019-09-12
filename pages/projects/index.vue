@@ -90,7 +90,7 @@ export default {
               framework. <br />
               The website, the nginx reverse proxy and the https encryption are in containers. <br />
               Containers are hosted on a <a href="https://www.vultr.com/" target="_blank">Vultr</a> Ubuntu virtual private server`,
-              src: '/media/logo_128px.png',
+              src: '/media/logo_128px.webp',
               source: {
                 url: 'https://github.com/KiritchoukC/kiritchoukc',
                 alt: 'Github kiritchoukc repository',
@@ -187,7 +187,7 @@ export default {
               title: 'Tim Mobile',
               subtitle: 'ERP Solution mobile app',
               description: `Done with <a href="https://angular.io/" target="_blank">Angular</a>, this is the mobile version of Tim ERP Solution`,
-              src: '/media/divotiz.png'
+              src: '/media/divotiz.webp'
             },
             {
               tag: 'Eurotunnel',
@@ -206,7 +206,7 @@ export default {
               description: `This is the first official project I've worked on. <br />
               It's an ERP solution based on <a href="https://dotnet.microsoft.com/apps/aspnet/mvc" target="_blank">ASP.NET MVC</a> technology with the <a href="https://docs.microsoft.com/en-us/dotnet/architecture/micro-services/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design#the-repository-pattern" target="_blank">repository pattern</a>.<br />
               Front-end is made with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> framework and <a href="https://knockoutjs.com/" target="_blank">KnockoutJS</a>.`,
-              src: '/media/divotiz.png'
+              src: '/media/divotiz.webp'
             }
           ]
         }

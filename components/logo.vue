@@ -1,12 +1,12 @@
 <template>
   <img
     srcset="
-      /media/logo_512px.png 512w,
-      /media/logo_384px.png 384w,
-      /media/logo_256px.png 256w,
-      /media/logo_128px.png 128w
+      /media/logo_512px.webp 512w,
+      /media/logo_384px.webp 384w,
+      /media/logo_256px.webp 256w,
+      /media/logo_128px.webp 128w
     "
-    src="/media/logo_128px.png"
+    src="/media/logo_128px.webp"
     alt="KiritchoukC Logo"
     title="KirithoukC Logo"
     :width="width"
