@@ -37,7 +37,9 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.6.1",
     "babel-eslint": "^10.0.3",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.3",
@@ -45,7 +47,11 @@
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
     "nodemon": "^1.19.1",
-    "prettier": "^1.18.2",
-    "@nuxtjs/vuetify": "^1.6.1"
+    "prettier": "^1.18.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
