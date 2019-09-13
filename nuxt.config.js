@@ -47,7 +47,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-compress'
   ],
   /*
    ** Axios module configuration
@@ -97,6 +98,17 @@ module.exports = {
       lang: 'en-US',
       theme_color: '#419B84',
       display: 'standalone'
+    }
+  },
+  /*
+   ** Compress configuration
+   */
+  'nuxt-compress': {
+    gzip: {
+      cache: true
+    },
+    brotli: {
+      threshold: 10240
     }
   },
   /*
