@@ -112,6 +112,12 @@ module.exports = {
     }
   },
   /*
+   ** Render configuration
+   */
+  render: {
+    compressor: true
+  },
+  /*
    ** Build configuration
    */
   build: {
