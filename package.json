@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "nodemailer": "^6.3.0",
     "nuxt": "^2.9.2",
+    "nuxt-compress": "^1.0.2",
     "validator": "^11.1.0",
     "xss-filters": "^1.2.7"
   },
