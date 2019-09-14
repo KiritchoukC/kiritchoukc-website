@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" style="height:97vh;">
+  <v-row justify="center" :class="$breakpoint.is.mdAndUp ? 'vh-97' : 'h-780'">
     <v-col class="d-none d-md-flex">
       <v-spacer></v-spacer>
     </v-col>
@@ -88,5 +88,13 @@ export default {
 
 .mr-100 {
   margin-right: 100px;
+}
+
+.vh-97 {
+  height: 97vh;
+}
+
+.h-780 {
+  height: 780px;
 }
 </style>
