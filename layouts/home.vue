@@ -1,5 +1,8 @@
 <template>
-  <v-app dark>
+  <v-app
+    dark
+    :class="$breakpoint.is.mdAndUp ? '' : 'horizontal-scroll--disabled'"
+  >
     <v-content>
       <nuxt />
     </v-content>
@@ -19,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.horizontal-scroll--disabled {
+  overflow-x: hidden;
+}
+</style>
