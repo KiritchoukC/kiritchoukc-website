@@ -92,3 +92,9 @@ sw.*
 
 # deploy file
 deploy.md
+
+# firebase directory
+.firebase/*
+
+# firebase public directory
+public/*

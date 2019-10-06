@@ -2,6 +2,8 @@ const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'src',
+  buildDir: 'functions/.nuxt',
   /*
    ** Headers of the page
    */
@@ -121,6 +123,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
