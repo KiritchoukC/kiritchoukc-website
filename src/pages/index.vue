@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height">
+  <v-container class="fill-height mx-0">
     <v-row>
       <v-col>
         <start></start>
