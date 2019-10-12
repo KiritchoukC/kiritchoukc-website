@@ -93,8 +93,8 @@ sw.*
 # deploy file
 deploy.md
 
-# firebase directory
-.firebase/*
-
-# firebase public directory
-public/*
+# firebase directories
+.firebase
+functions/.nuxt
+functions/node_modules
+public

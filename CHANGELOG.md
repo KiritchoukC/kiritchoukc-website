@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/KiritchoukC/kiritchoukc/compare/v3.0.0...v2.1.0) (2019-10-12)
+
+
+### Features
+
+* **add dev logo:** add dev logo linking to dev profile ([70ac007](https://github.com/KiritchoukC/kiritchoukc/commit/70ac007))
+
+## [2.0.0](https://github.com/KiritchoukC/kiritchoukc/compare/v1.0.3...v2.0.0) (2019-10-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* **firebase hosting:** Moving from docker vps hosting to firebase hosting
+
+* **firebase hosting:** move the website to firebase hosting and functions ([823088f](https://github.com/KiritchoukC/kiritchoukc/commit/823088f))
+
 ## [2.0.0](https://github.com/KiritchoukC/kiritchoukc/compare/v1.0.3...v2.0.0) (2019-10-06)
 
 
