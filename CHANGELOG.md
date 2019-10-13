@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/KiritchoukC/kiritchoukc/compare/v2.1.2...v2.2.0) (2019-10-13)
+
+
+### Features
+
+* **add ssr loading:** fix FOUC by adding a loader when ssr is rendering ([31207ea](https://github.com/KiritchoukC/kiritchoukc/commit/31207ea))
+
 ### [2.1.2](https://github.com/KiritchoukC/kiritchoukc/compare/v2.1.1...v2.1.2) (2019-10-12)
 
 ### [2.1.1](https://github.com/KiritchoukC/kiritchoukc/compare/v2.1.0...v2.1.1) (2019-10-12)
