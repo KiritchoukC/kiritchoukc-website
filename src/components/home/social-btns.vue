@@ -7,12 +7,12 @@
         rel="noopener"
         aria-label="Go to my Dev profile"
       >
-        <github-logo
+        <dev-logo
           :class="
             hover ? 'grey--text text--darken-2' : 'grey--text text--darken-1'
           "
           fill="currentColor"
-        ></github-logo>
+        ></dev-logo>
       </a>
     </v-hover>
     <v-hover v-slot:default="{ hover }">
@@ -67,12 +67,14 @@
 import githubLogo from '@/components/github-logo.vue'
 import twitterLogo from '@/components/twitter-logo.vue'
 import linkedinLogo from '@/components/linkedin-logo.vue'
+import devLogo from '@/components/dev-logo.vue'
 
 export default {
   components: {
     githubLogo,
     linkedinLogo,
-    twitterLogo
+    twitterLogo,
+    devLogo
   }
 }
 </script>
