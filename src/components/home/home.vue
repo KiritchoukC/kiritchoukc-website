@@ -21,7 +21,7 @@
       <about-card
         :style="
           $breakpoint.is.smAndDown
-            ? 'width:90vw; margin-bottom:40px;'
+            ? 'width:90vw; margin-bottom:20px;'
             : 'margin-left:20px'
         "
       ></about-card>
