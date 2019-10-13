@@ -2,6 +2,21 @@
   <v-row justify="space-around">
     <v-hover v-slot:default="{ hover }">
       <a
+        href="https://dev.to/kiritchoukc"
+        target="_blank"
+        rel="noopener"
+        aria-label="Go to my Dev profile"
+      >
+        <github-logo
+          :class="
+            hover ? 'grey--text text--darken-2' : 'grey--text text--darken-1'
+          "
+          fill="currentColor"
+        ></github-logo>
+      </a>
+    </v-hover>
+    <v-hover v-slot:default="{ hover }">
+      <a
         href="https://github.com/KiritchoukC"
         target="_blank"
         rel="noopener"

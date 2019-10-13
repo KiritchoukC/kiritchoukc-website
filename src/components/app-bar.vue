@@ -87,6 +87,22 @@
     </template>
     <div class="flex-grow-1"></div>
     <template v-if="$breakpoint.is.smAndUp">
+      <v-btn icon title="Go to my Dev profile">
+        <a
+          href="https://dev.to/kiritchoukc"
+          target="_blank"
+          rel="noopener"
+          aria-label="Go to my Dev profile"
+        >
+          <github-logo
+            :height="'30px'"
+            :width="'30px'"
+            class="grey--text text--darken-1"
+            style="fill:currentColor"
+          ></github-logo>
+        </a>
+      </v-btn>
+
       <v-btn icon title="Go to my Github profile">
         <a
           href="https://github.com/KiritchoukC"
