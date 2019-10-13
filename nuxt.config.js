@@ -24,7 +24,11 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#419B84' },
+  loading: {
+    name: 'folding-cube',
+    color: '#419B84',
+    background: 'white'
+  },
   /*
    ** Global CSS
    */
@@ -123,7 +127,6 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    extractCSS: true,
     /*
      ** You can extend webpack config here
      */

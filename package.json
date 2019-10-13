@@ -23,8 +23,8 @@
     "clean:public": "rimraf \"public/**/*.*!(md)\" && rimraf \"public/_nuxt\"",
     "clean:static": "rimraf \"src/static/sw.js\"",
     "copy": "yarn copy:nuxt && yarn copy:static",
-    "copy:nuxt": "xcopy \"functions\\.nuxt\\dist\\*\" \"public\\_nuxt\" /E /Y",
-    "copy:static": "xcopy \"src\\static\\*\" \"public\" /E /Y",
+    "copy:nuxt": "xcopy \"functions\\.nuxt\\dist\\*\" \"public\\_nuxt\\\" /E /Y",
+    "copy:static": "xcopy \"src\\static\\*\" \"public\\\" /E /Y",
     "deploy": "firebase deploy --only functions,hosting",
     "start:firebase": "firebase serve --only functions,hosting"
   },
