@@ -11,6 +11,22 @@
         </v-row>
         <template v-if="!$breakpoint.is.mdAndUp">
           <v-row align="center" style="justify-content: space-evenly">
+            <v-btn icon title="Go to my Dev profile">
+              <a
+                href="https://dev.to/kiritchoukc"
+                target="_blank"
+                rel="noopener"
+                aria-label="Go to my Dev profile"
+              >
+                <dev-logo
+                  :height="'40px'"
+                  :width="'40px'"
+                  class="grey--text text--lighten-1"
+                  style="fill:currentColor"
+                ></dev-logo>
+              </a>
+            </v-btn>
+
             <v-btn icon title="Go to my Github profile">
               <a
                 href="https://github.com/KiritchoukC"
@@ -136,12 +152,14 @@
 import githubLogo from '@/components/github-logo.vue'
 import twitterLogo from '@/components/twitter-logo.vue'
 import linkedinLogo from '@/components/linkedin-logo.vue'
+import devLogo from '@/components/dev-logo.vue'
 
 export default {
   components: {
     githubLogo,
     linkedinLogo,
-    twitterLogo
+    twitterLogo,
+    devLogo
   }
 }
 </script>
