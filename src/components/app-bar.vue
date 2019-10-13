@@ -94,12 +94,12 @@
           rel="noopener"
           aria-label="Go to my Dev profile"
         >
-          <github-logo
+          <dev-logo
             :height="'30px'"
             :width="'30px'"
             class="grey--text text--darken-1"
             style="fill:currentColor"
-          ></github-logo>
+          ></dev-logo>
         </a>
       </v-btn>
 
@@ -157,6 +157,7 @@
 import githubLogo from '@/components/github-logo.vue'
 import twitterLogo from '@/components/twitter-logo.vue'
 import linkedinLogo from '@/components/linkedin-logo.vue'
+import devLogo from '@/components/dev-logo.vue'
 import logo from '@/components/logo.vue'
 
 export default {
@@ -164,6 +165,7 @@ export default {
     githubLogo,
     linkedinLogo,
     twitterLogo,
+    devLogo,
     logo
   },
   props: {
