@@ -9,9 +9,9 @@
       <v-timeline dense>
         <template v-for="(item, i) in data">
           <v-timeline-item :key="'year-' + i" color="transparent" hide-dot>
-            <span class="grey--text text--darken-5 display-1">{{
-              item.year
-            }}</span>
+            <span class="grey--text text--darken-5 display-1">
+              {{ item.year }}
+            </span>
           </v-timeline-item>
 
           <v-timeline-item
@@ -85,6 +85,27 @@ export default {
             {
               tag: 'Personal',
               title: 'Kiritchouk Clément Website',
+              subtitle: 'Firebase migration',
+              description: `Moving my website from private docker server to firebase hosting with server-side rendering using firebase functions`,
+              src: '/media/logo_128px.webp',
+              source: {
+                url: 'https://github.com/KiritchoukC/kiritchoukc',
+                alt: 'Github kiritchoukc repository',
+                title: 'Go to github repository'
+              }
+            },
+            {
+              tag: 'Eurotunnel',
+              title: 'Versioning system implementation',
+              subtitle: 'Fixes and new features on Front-end',
+              description: `In an existing solution, I had to implement a versioning system.<br />
+              Every change is now tracked and you can get a history of all the changes made on a resource.`,
+              src:
+                'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo-Eurotunnel.jpg/600px-Logo-Eurotunnel.jpg'
+            },
+            {
+              tag: 'Personal',
+              title: 'Kiritchouk Clément Website',
               subtitle: 'Personal website',
               description: `This is the website you're on, this is made with <a href="https://vuejs.org/" target="_blank">Vue</a> and the <a href="https://nuxtjs.org/" target="_blank">Nuxt</a>
               framework. <br />
@@ -101,7 +122,7 @@ export default {
               tag: 'Eurotunnel',
               title: 'Front-end tasks',
               subtitle: 'Fixes and new features on Front-end',
-              description: `Using <a href="https://angularjs.org/" target="_blank">AngularJs</a>, I've added some features and fixed little anomalies.`,
+              description: `Using <a href="https://angularjs.org/" target="_blank">AngularJs</a>, I've added some features and fixed issues.`,
               src:
                 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo-Eurotunnel.jpg/600px-Logo-Eurotunnel.jpg'
             },
