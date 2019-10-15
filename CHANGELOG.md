@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/KiritchoukC/kiritchoukc/compare/v2.4.1...v2.5.0) (2019-10-15)
+
+
+### Features
+
+* **add project story:** add 2 project stories (firebase migration and versioning system) ([77b5552](https://github.com/KiritchoukC/kiritchoukc/commit/77b5552))
+
 ### [2.4.1](https://github.com/KiritchoukC/kiritchoukc/compare/v2.4.0...v2.4.1) (2019-10-13)
 
 
