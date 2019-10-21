@@ -1,9 +1,9 @@
 <template>
   <div>
-    <slot v-if="initialised" />
     <span v-if="!initialised">
       <loader></loader>
     </span>
+    <slot />
   </div>
 </template>
 
@@ -25,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.d-none {
+  display: none;
+}
+</style>
