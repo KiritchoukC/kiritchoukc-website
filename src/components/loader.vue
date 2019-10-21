@@ -21,6 +21,9 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: #fff;
+  z-index: 999;
 }
 
 .sk-folding-cube {
